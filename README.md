@@ -1,11 +1,14 @@
 # Chromosome-Analysis
 1. Brief Description:
+
 The code reads base sequence of a human chromosome segment and calculates the number of proteins encoded in this sequence, their average, maximum, and minimum lengths, and also the most and least frequent stop codons.
 
-2. Model and Theory
+2. Model and Theory:
+
 The DNA is a sequence of nucleotides that encodes the genetic information. The four nucleotides that are used are adenine (A), cytosine (C), guanine (G), and thymine (T). The following convention is used to substitute letters with numbers: A=1, C=2, G=3, T=4. A set of three nucleotides is called a codon and can encode for an amino acid in a protein-coding segment. A protein-coding segment is enclosed with a start codon and a stop codon. The start codon is ATG (143), and the stop codon can be any of the three: TAA (411), TAG (413), or TGA (431). Any start codons that appear before the stop codon in a protein-coding segment should be ignored. Likewise, any stop codons that appear before the start codon between protein-coding segments should be ignored as well.
 
-3. Discussions and Conclusions
+3. Discussions and Conclusions:
+
 It can be seen that in the sample of 1,261,563 bases of human chromosome 1, there are 4339 protein-coding segments in total with an average length of 87.69 bases, and maximum and minimum lengths of 1797 and 6 bases, respectively.
 
 Using function sum(proteinLengthsArr) to calculate the number of bases in all protein-coding segments yields 380,472 bases, including start and stop codons. Finding the percentage of protein-coding bases in the sample chromosome yields 380,472/1,261,563×100%=30.16%.
